@@ -44,16 +44,16 @@ This system can be integrated into vehicle monitoring systems at construction si
 
 ## Evaluation Results
 
-The model was evaluated on **226** test images containing **796** wheel instances.
+The model was evaluated on **228 test images** containing **797 wheel instances**.
 
 | Metric | Value |
 |--------|------:|
-| Test Images | 226 |
-| Total Instances | 796 |
-| Precision (P) | 0.994 |
-| Recall (R) | 0.993 |
-| mAP@50 | 0.995 |
-| mAP@50-95 | 0.867 |
+| Test Images | 228 |
+| Total Instances | 797 |
+| Precision (P) | 0.995 |
+| Recall (R) | 0.987 |
+| mAP@50 | 0.994 |
+| mAP@50-95 | 0.856 |
 
 ---
 
@@ -61,8 +61,8 @@ The model was evaluated on **226** test images containing **796** wheel instance
 
 | Class | Images | Instances | Precision | Recall | mAP@50 | mAP@50-95 |
 |------|------:|----------:|----------:|--------:|--------:|-----------:|
-| Clean | 116 | 356 | 0.997 | 0.989 | 0.995 | 0.852 |
-| Dirty | 140 | 440 | 0.991 | 0.998 | 0.995 | 0.881 |
+| Clean | 120 | 344 | 0.997 | 0.983 | 0.992 | 0.856 |
+| Dirty | 153 | 453 | 0.992 | 0.991 | 0.995 | 0.856 |
 
 ---
 
@@ -71,11 +71,11 @@ The model was evaluated on **226** test images containing **796** wheel instance
 | Stage | Time / Image |
 |--------|-------------:|
 | Preprocess | 1.3 ms |
-| Inference | 65.4 ms |
+| Inference | 53.9 ms |
 | Loss | 0.0 ms |
 | Postprocess | 0.6 ms |
 
-Average inference time is approximately **67.3 ms per image**, making the model suitable for near real-time deployment.
+Average inference time is approximately **55.8 ms per image**, making the model suitable for near real-time deployment.
 
 ---
 
@@ -83,9 +83,11 @@ Average inference time is approximately **67.3 ms per image**, making the model 
 
 The fine-tuned YOLO11n model achieved excellent detection performance:
 
-- **Precision:** 99.4%
-- **Recall:** 99.3%
-- **mAP@50:** 99.5%
-- **mAP@50-95:** 86.7%
+- **Precision:** 99.5%
+- **Recall:** 98.7%
+- **mAP@50:** 99.4%
+- **mAP@50-95:** 85.6%
+
+The results demonstrate that transfer learning from **YOLO11n** enables highly accurate detection and classification of clean and dirty construction truck wheels while maintaining fast inference speed, making the model suitable for practical deployment in construction site vehicle inspection systems.
 
 The results demonstrate that transfer learning from **YOLO11n** provides highly accurate detection and classification of clean and dirty construction truck wheels while maintaining fast inference speed.
