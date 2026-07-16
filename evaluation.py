@@ -1,16 +1,10 @@
 import os
 from collections import defaultdict
 
-# ==========================================================
-# CONFIG
-# ==========================================================
-
 GT_DIR = "dataset/test/labels"
 PRED_DIR = "./runs/detect/predict_result/labels_pred/labels"
 
-NUM_CLASSES = 2          # sửa nếu dataset nhiều class
-
-# ==========================================================
+NUM_CLASSES = 2
 
 
 def load_labels(folder):
