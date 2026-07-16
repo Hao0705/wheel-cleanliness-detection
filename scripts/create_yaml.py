@@ -7,7 +7,7 @@ import yaml
 
 dataset_info = {
     "train": "./train/images",
-    "val": "./valid/images",
+    "valid": "./valid/images",
     "test": "./test/images",
 
     # Đường dẫn tuyệt đối tới thư mục dataset
